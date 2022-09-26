@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from pettoren.herokuapp.com/users/sign_up by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Sep 2022 17:22:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Pettoren</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="W1lrHyuH80nB2AbiIHpLAdeA5ISd2vzSKop/09urOzXAH0JiYmZBWvk08Qk1t7X/eT23R7HlzhCs9SeSK9zbyQ==" />
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" media="all" href="../assets/application-19917a155bec9bab3e79f598ddf4fa6406407439b255f0b0ffe06bd800fbeab3.css" data-turbolinks-track="reload" />
+
+    <script src="../packs/js/application-8cca2cbefe3422d2f859.js" data-turbolinks-track="reload" defer="defer"></script>
+    <link rel="stylesheet" media="screen" href="../packs/css/application-21283c9d.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/dog_head-9397f6174f5ca571b844fa2f7fe04f5376376620941d515f3199a7bf1f8448f6.png" />
+  </head>
+
+  <body>
+        <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="../index.html">
+       <img src="../assets/pettu_logo-9144f6069856dfc46d45a21eae6ebbb3f5e4487d1c45b096560fb033e29186bc.png" />
+</a>    <div class="flex" style=" width: 40%">
+      <div style=" width: 100%">
+        <form action="https://pettoren.herokuapp.com/pets" accept-charset="UTF-8" method="get">
+  <input type="text" name="query" id="query" class="form-control" placeholder="Look for a furry friend!" />
+  </div>
+  <div>
+  <button name="button" type="submit" class="search-button">
+     <i class="fas fa-paw fa-lg"></i>
+</button></form></div>
+</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="sign_in.html">Login</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    You need to sign in or sign up before continuing.
+  </div>
+
+    <main>
+      <p style="margin-bottom: 0px;"></p>
+      <p style="margin-bottom: 0px;">You need to sign in or sign up before continuing.</p>
+      <div class="container mt-5 pt-5">
+  <div class="row mt-3">
+    <div class="col-12 col-lg-8 offset-lg-2">
+      <h2>Sign up</h2>
+
+      <form class="simple_form new_user" id="new_user" novalidate="novalidate" enctype="multipart/form-data" action="https://pettoren.herokuapp.com/users" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="W7WugabJSxOWQ74TOycEepg8VMrxVG47Y0tlGLKcQmJpU0E55eSMBETOCuWyhHLo966LjEO4e3obkYipp0Z//Q==" />
+        
+
+        <div class="form-inputs">
+          <div class="form-group string required user_name"><label class="string required" for="user_name">Name <abbr title="required">*</abbr></label><input class="form-control string required" autocomplete="name" autofocus="autofocus" required="required" aria-required="true" type="text" name="user[name]" id="user_name" /></div>
+          <div class="form-group string required user_address"><label class="string required" for="user_address">Address <abbr title="required">*</abbr></label><input class="form-control string required" autocomplete="address" autofocus="autofocus" required="required" aria-required="true" type="text" name="user[address]" id="user_address" /></div>
+          <div class="form-group tel required user_phone_number"><label class="tel required" for="user_phone_number">Phone number <abbr title="required">*</abbr></label><input class="form-control string tel required" autocomplete="phone number" autofocus="autofocus" required="required" aria-required="true" type="tel" name="user[phone_number]" id="user_phone_number" /></div>
+          <div class="form-group file optional user_user_pic"><label class="file optional" for="user_user_pic">User pic</label><input class="form-control-file file optional" autocomplete="avatar picture" type="file" name="user[user_pic]" id="user_user_pic" /></div>
+          <div class="form-group email required user_email"><label class="email required" for="user_email">Email <abbr title="required">*</abbr></label><input class="form-control string email required" autocomplete="email" autofocus="autofocus" required="required" aria-required="true" type="email" value="" name="user[email]" id="user_email" /></div>
+          <div class="form-group password required user_password"><label class="password required" for="user_password">Password <abbr title="required">*</abbr></label><input class="form-control password required" autocomplete="new-password" required="required" aria-required="true" type="password" name="user[password]" id="user_password" /><small class="form-text text-muted">6 characters minimum</small></div>
+          <div class="form-group password required user_password_confirmation"><label class="password required" for="user_password_confirmation">Password confirmation <abbr title="required">*</abbr></label><input class="form-control password required" autocomplete="new-password" required="required" aria-required="true" type="password" name="user[password_confirmation]" id="user_password_confirmation" /></div>
+        </div>
+
+        <div class="form-actions">
+          <input type="submit" name="commit" value="Sign up" id="register-btn" class="btn" data-disable-with="Sign up" />
+        </div>
+</form>
+        <a href="sign_in.html">Log in</a><br />
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+    </main>
+    <footer class="navbar-light">
+  <div class="container footer-content">
+    <p>Created by <span>pettoren</span></p>
+  </div>
+</footer>
+  </body>
+
+<!-- Mirrored from pettoren.herokuapp.com/users/sign_up by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Sep 2022 17:22:17 GMT -->
+</html>
